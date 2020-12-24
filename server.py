@@ -2,7 +2,7 @@ import http.server
 import socketserver
 from chatbot import chatbot_query
 
-PORT = 8080
+PORT = process.env.PORT
 DIRECTORY = 'public'
 
 class Handler(http.server.SimpleHTTPRequestHandler):
